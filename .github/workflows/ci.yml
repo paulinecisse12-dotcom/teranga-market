@@ -1,0 +1,31 @@
+name: CI
+
+# Se declenche a chaque push et pull request sur main
+on:
+  push:
+    branches: [ main, master ]
+  pull_request:
+    branches: [ main, master ]
+
+jobs:
+  tests:
+    name: Lint + Tests
+    runs-on: ubuntu-latest
+    steps:
+      - name: Recuperer le code
+        uses: actions/checkout@v4
+
+      - name: Installer Python 3.13
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.13"
+
+      - name: Installer les dependances de test
+        run: pip install numpy pytest ruff
+
+      - name: Verification du style (ruff)
+        run: ruff check . --output-format=github
+        continue-on-error: true      # le lint n'echoue pas le build (informatif)
+
+      - name: Tests unitaires (pytest)
+        run: pytest tests/ -q

@@ -1,0 +1,4 @@
+indicateur,metrique,PSI,detail,verdict
+demande_quotidienne,PSI,4.461,323 -> 571 u/j,DERIVE IMPORTANTE (re-entrainer !)
+prix_unitaire,PSI,0.001,238145 -> 238770 FCFA,OK (stable)
+mix_categories,PSI,0.0,repartition des ventes,OK (stable)

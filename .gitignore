@@ -1,0 +1,41 @@
+# ---- Environnements Python ----
+.venv/
+venv/
+__pycache__/
+*.pyc
+*.pyo
+
+# ---- Donnees generees (reproductibles via les scripts, graine fixe = 42) ----
+02_DONNEES/brut/
+02_DONNEES/lake/
+02_DONNEES/warehouse/*.duckdb
+
+# ---- Sorties Spark ----
+**/_SUCCESS
+**/.*.crc
+metastore_db/
+derby.log
+spark-warehouse/
+
+# ---- Logs & temporaires ----
+*_log.txt
+*.log
+_ingestion_log.txt
+
+# ---- Fichiers systeme ----
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# ---- Fichiers bureautiques temporaires ----
+~$*.docx
+~$*.xlsx
+
+# ---- MLOps / artefacts modeles (regenerables par les scripts) ----
+**/mlruns/
+**/mlflow.db
+**/mlartifacts/
+04_PRODUCTION/api/artefacts/
+
+# ---- Jupyter ----
+.ipynb_checkpoints/

@@ -1,0 +1,6 @@
+modele,Recall@5_%,Precision@5_%
+Hasard (aleatoire),1.0,0.2
+Populaire (baseline),6.9,1.4
+Content-based,1.2,0.2
+Collaboratif,6.8,1.4
+Hybride (alpha=0.5),4.5,0.9

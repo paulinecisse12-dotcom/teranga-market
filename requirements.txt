@@ -1,0 +1,29 @@
+# ============================================================
+#  Teranga Market — dependances Python
+#  Installation :  pip install -r requirements.txt
+# ============================================================
+
+# --- Donnees ---
+pandas
+numpy
+duckdb
+pyarrow
+
+# --- Data science / modeles ---
+scikit-learn
+statsmodels
+prophet
+lightgbm
+matplotlib
+
+# --- MLOps ---
+mlflow
+
+# --- Notebooks ---
+jupyterlab
+ipykernel
+
+# --- Tests ---
+pytest
+
+# NB : PySpark et Kafka tournent dans WSL/Docker (voir 02_DONNEES), pas ici.

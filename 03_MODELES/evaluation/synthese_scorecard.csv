@@ -1,0 +1,4 @@
+Modele,Metrique,Baseline,Notre modele,Resultat
+1. Prevision demande,MAE (unites/jour),66 (naif),37 (Prophet+promo),-43% d'erreur
+2. Optimisation prix,Marge,prix actuels,+14% de prix,+3.8% de marge
+3. Recommandation,Recall@5,1.0% (hasard),6.8% (collaboratif),~7x le hasard
