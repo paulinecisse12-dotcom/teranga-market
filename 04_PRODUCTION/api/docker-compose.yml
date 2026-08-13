@@ -1,0 +1,11 @@
+# ============================================================
+#  Lancer l'API en une commande :  docker compose up --build
+#  Puis : http://127.0.0.1:8000/docs   (arreter : Ctrl+C)
+# ============================================================
+services:
+  api:
+    build: .
+    container_name: teranga-api
+    ports:
+      - "8000:8000"
+    restart: unless-stopped

@@ -1,0 +1,501 @@
+id_produit,nom,categorie,prix_actuel,cout,elasticite,prix_optimal
+1,Samsung Galaxy Tab A9 128 Go,Smartphones & tablettes,373500,285500,-2.619,461843.0
+2,Apple iPhone 13,Smartphones & tablettes,440000,325700,-2.619,526874.0
+3,Oppo A98 128 Go,Smartphones & tablettes,137000,90700,-2.619,146722.0
+4,Tecno Spark 10 256 Go,Smartphones & tablettes,633500,478700,-2.619,774376.0
+5,Infinix Note 30 64 Go,Smartphones & tablettes,212500,146300,-2.619,236664.0
+6,Samsung Galaxy Tab A9 256 Go,Smartphones & tablettes,250000,184800,-2.619,298945.0
+7,Apple iPhone 14,Smartphones & tablettes,777500,601200,-2.619,972540.0
+8,Oppo A98,Smartphones & tablettes,316500,177500,-2.619,287136.0
+9,Infinix Hot 40 128 Go,Smartphones & tablettes,559000,411500,-2.619,665669.0
+10,Itel P55 64 Go,Smartphones & tablettes,728000,485800,-2.619,785862.0
+11,Oppo Reno 8 64 Go,Smartphones & tablettes,138500,92600,-2.619,149796.0
+12,Xiaomi Poco X5 128 Go,Smartphones & tablettes,754500,572000,-2.619,925305.0
+13,Apple iPad 10,Smartphones & tablettes,277000,209900,-2.619,339548.0
+14,Oppo A98 64 Go,Smartphones & tablettes,722500,520600,-2.619,842157.0
+15,Apple iPhone 13 256 Go,Smartphones & tablettes,191500,105600,-2.619,170825.0
+16,Oppo A98 128 Go,Smartphones & tablettes,398000,296500,-2.619,479638.0
+17,Infinix Note 30 128 Go,Smartphones & tablettes,472000,276000,-2.619,446476.0
+18,Samsung Galaxy A54 128 Go,Smartphones & tablettes,537000,371200,-2.619,600477.0
+19,Samsung Galaxy Tab A9 128 Go,Smartphones & tablettes,522000,359300,-2.619,581227.0
+20,Infinix Zero 30 64 Go,Smartphones & tablettes,498000,328200,-2.619,530918.0
+21,Itel A70 64 Go,Smartphones & tablettes,350000,267100,-2.619,432078.0
+22,Xiaomi Mi Pad 6,Smartphones & tablettes,690000,430100,-2.619,695758.0
+23,Infinix Note 30,Smartphones & tablettes,463000,345300,-2.619,558580.0
+24,Apple iPhone 14 64 Go,Smartphones & tablettes,357500,211500,-2.619,342136.0
+25,Tecno Spark 10,Smartphones & tablettes,108000,78900,-2.619,127634.0
+26,Infinix Zero 30,Smartphones & tablettes,724000,425700,-2.619,688640.0
+27,Infinix Zero 30 64 Go,Smartphones & tablettes,379000,244500,-2.619,395519.0
+28,Tecno Pova 5 128 Go,Smartphones & tablettes,501000,286500,-2.619,463461.0
+29,Tecno Spark 10 64 Go,Smartphones & tablettes,771000,599100,-2.619,969143.0
+30,Apple iPhone 14 64 Go,Smartphones & tablettes,620500,462000,-2.619,747361.0
+31,Xiaomi Poco X5 256 Go,Smartphones & tablettes,381500,235700,-2.619,381284.0
+32,Samsung Galaxy A54 256 Go,Smartphones & tablettes,136500,81900,-2.619,132487.0
+33,Oppo Reno 8 256 Go,Smartphones & tablettes,480000,285200,-2.619,461358.0
+34,Oppo Reno 8 256 Go,Smartphones & tablettes,414000,272400,-2.619,440652.0
+35,Tecno Camon 20,Smartphones & tablettes,483500,344400,-2.619,557124.0
+36,Samsung Galaxy Tab A9 64 Go,Smartphones & tablettes,638000,429600,-2.619,694949.0
+37,Xiaomi Redmi 13C 128 Go,Smartphones & tablettes,149500,86000,-2.619,139119.0
+38,Apple iPad 10,Smartphones & tablettes,267500,185900,-2.619,300724.0
+39,Infinix Note 30 128 Go,Smartphones & tablettes,489000,271700,-2.619,439520.0
+40,Itel P55 64 Go,Smartphones & tablettes,395000,225400,-2.619,364622.0
+41,Xiaomi Redmi 13C 128 Go,Smartphones & tablettes,412500,323500,-2.619,523315.0
+42,Apple iPhone 14 64 Go,Smartphones & tablettes,653500,413500,-2.619,668905.0
+43,Infinix Note 30 256 Go,Smartphones & tablettes,373500,207400,-2.619,335504.0
+44,Oppo Reno 8 256 Go,Smartphones & tablettes,452500,311500,-2.619,503903.0
+45,Tecno Spark 10 128 Go,Smartphones & tablettes,550500,341400,-2.619,552271.0
+46,Apple iPad 10 128 Go,Smartphones & tablettes,753000,434400,-2.619,702714.0
+47,Apple iPad 10 256 Go,Smartphones & tablettes,214500,119900,-2.619,193958.0
+48,Infinix Note 30 64 Go,Smartphones & tablettes,275500,207100,-2.619,335018.0
+49,Itel A70,Smartphones & tablettes,764000,475700,-2.619,769523.0
+50,Infinix Zero 30 64 Go,Smartphones & tablettes,793000,468700,-2.619,758200.0
+51,Infinix Hot 40 64 Go,Smartphones & tablettes,370500,295600,-2.619,478182.0
+52,Itel A70 128 Go,Smartphones & tablettes,682500,527800,-2.619,853804.0
+53,Samsung Galaxy S23 64 Go,Smartphones & tablettes,280000,208000,-2.619,336474.0
+54,Apple iPhone 14 64 Go,Smartphones & tablettes,713500,525600,-2.619,850245.0
+55,Tecno Spark 10,Smartphones & tablettes,751500,458500,-2.619,741700.0
+56,Samsung Galaxy A14 256 Go,Smartphones & tablettes,717500,426700,-2.619,690258.0
+57,Tecno Camon 20 128 Go,Smartphones & tablettes,704500,422000,-2.619,682655.0
+58,Tecno Pova 5 256 Go,Smartphones & tablettes,283500,191400,-2.619,309621.0
+59,Infinix Hot 40 256 Go,Smartphones & tablettes,50500,30600,-2.619,49501.0
+60,Samsung Galaxy A14 128 Go,Smartphones & tablettes,776500,525300,-2.619,849760.0
+61,Itel S23 256 Go,Smartphones & tablettes,481500,288800,-2.619,467182.0
+62,Oppo Reno 8 128 Go,Smartphones & tablettes,104000,60600,-2.619,98031.0
+63,Infinix Hot 40 128 Go,Smartphones & tablettes,744500,483400,-2.619,781979.0
+64,Tecno Spark 10 64 Go,Smartphones & tablettes,426000,336000,-2.619,543536.0
+65,Infinix Hot 40 256 Go,Smartphones & tablettes,742500,412900,-2.619,667934.0
+66,Infinix Hot 40 128 Go,Smartphones & tablettes,679000,397200,-2.619,642537.0
+67,Oppo A78,Smartphones & tablettes,774000,541000,-2.619,875157.0
+68,Itel S23 256 Go,Smartphones & tablettes,368000,274500,-2.619,444049.0
+69,Oppo Reno 8 128 Go,Smartphones & tablettes,122500,92700,-2.619,149958.0
+70,Oppo A78,Smartphones & tablettes,294000,206200,-2.619,333563.0
+71,Itel S23 256 Go,Smartphones & tablettes,498000,325200,-2.619,526065.0
+72,Tecno Pova 5 64 Go,Smartphones & tablettes,126000,96600,-2.619,156266.0
+73,Xiaomi Redmi 13C 128 Go,Smartphones & tablettes,228000,138800,-2.619,224532.0
+74,Oppo A98 256 Go,Smartphones & tablettes,768500,435400,-2.619,704331.0
+75,Infinix Note 30 64 Go,Smartphones & tablettes,151000,114100,-2.619,184576.0
+76,Tecno Pova 5,Smartphones & tablettes,735500,434900,-2.619,703523.0
+77,Xiaomi Redmi 13C 128 Go,Smartphones & tablettes,156500,90500,-2.619,146399.0
+78,Samsung Galaxy S23,Smartphones & tablettes,188000,105900,-2.619,171311.0
+79,Infinix Note 30 128 Go,Smartphones & tablettes,557000,361100,-2.619,584139.0
+80,Tecno Pova 5 128 Go,Smartphones & tablettes,599000,456900,-2.619,739111.0
+81,Infinix Hot 40 64 Go,Smartphones & tablettes,177500,108100,-2.619,174870.0
+82,Xiaomi Poco X5 128 Go,Smartphones & tablettes,761000,427900,-2.619,692199.0
+83,Samsung Galaxy A54 256 Go,Smartphones & tablettes,438000,252000,-2.619,407652.0
+84,Oppo Reno 8,Smartphones & tablettes,347000,199400,-2.619,322562.0
+85,Oppo A98 256 Go,Smartphones & tablettes,726000,577000,-2.619,933393.0
+86,Oppo A78 256 Go,Smartphones & tablettes,517000,385000,-2.619,622801.0
+87,Oppo Reno 8 256 Go,Smartphones & tablettes,447000,303300,-2.619,490638.0
+88,Itel S23 64 Go,Smartphones & tablettes,635500,451100,-2.619,729729.0
+89,Xiaomi Redmi 13C,Smartphones & tablettes,146000,97700,-2.619,158046.0
+90,Tecno Camon 20,Smartphones & tablettes,297000,190500,-2.619,308165.0
+91,Acer Aspire 5 16 Go RAM,Ordinateurs,662000,477500,-2.413,815433.0
+92,Dell Latitude 5420 SSD 512 Go,Ordinateurs,1055500,707400,-2.413,1208037.0
+93,Acer Aspire 5 16 Go RAM,Ordinateurs,872500,664900,-2.413,1135459.0
+94,Asus VivoBook 15 SSD 512 Go,Ordinateurs,896500,634900,-2.413,1084228.0
+95,HP Pavilion 15,Ordinateurs,1142000,685800,-2.413,1171150.0
+96,Acer Swift 3 SSD 512 Go,Ordinateurs,1390500,978300,-2.413,1670657.0
+97,Asus VivoBook 15 SSD 256 Go,Ordinateurs,1129500,645000,-2.413,1101476.0
+98,Apple MacBook Pro 14,Ordinateurs,1445500,1084400,-2.413,1851845.0
+99,Lenovo ThinkPad E14 16 Go RAM,Ordinateurs,1206500,903400,-2.413,1542749.0
+100,Apple MacBook Air M1 8 Go RAM,Ordinateurs,1124500,645100,-2.413,1101646.0
+101,Asus ZenBook 14,Ordinateurs,381000,263300,-2.413,449641.0
+102,Asus ZenBook 14 16 Go RAM,Ordinateurs,1067000,790600,-2.413,1350119.0
+103,Apple MacBook Pro 14 16 Go RAM,Ordinateurs,814000,569700,-2.413,972885.0
+104,Apple MacBook Pro 14,Ordinateurs,1211000,692600,-2.413,1182763.0
+105,Lenovo ThinkPad E14 SSD 256 Go,Ordinateurs,715000,531600,-2.413,907821.0
+106,Acer Nitro 5 8 Go RAM,Ordinateurs,1146500,849100,-2.413,1450020.0
+107,Asus VivoBook 15 SSD 256 Go,Ordinateurs,641500,403200,-2.413,688550.0
+108,HP ProBook 450,Ordinateurs,266000,175400,-2.413,299533.0
+109,Acer Swift 3,Ordinateurs,1135000,781100,-2.413,1333895.0
+110,Apple MacBook Air M1 SSD 256 Go,Ordinateurs,977000,629200,-2.413,1074494.0
+111,Asus ROG Strix,Ordinateurs,1118500,881100,-2.413,1504667.0
+112,HP Pavilion 15 SSD 512 Go,Ordinateurs,1335000,774900,-2.413,1323308.0
+113,Lenovo ThinkPad E14,Ordinateurs,1076000,595100,-2.413,1016261.0
+114,Lenovo Legion 5 SSD 512 Go,Ordinateurs,732000,486500,-2.413,830803.0
+115,Dell XPS 13,Ordinateurs,557500,434600,-2.413,742173.0
+116,Acer Swift 3,Ordinateurs,677500,521500,-2.413,890573.0
+117,Acer Aspire 5 SSD 256 Go,Ordinateurs,1279500,737700,-2.413,1259781.0
+118,Apple MacBook Air M1 SSD 256 Go,Ordinateurs,334000,191200,-2.413,326515.0
+119,Acer Nitro 5 SSD 512 Go,Ordinateurs,189000,115300,-2.413,196899.0
+120,HP ProBook 450 SSD 256 Go,Ordinateurs,1241000,965000,-2.413,1647944.0
+121,Dell XPS 13 SSD 512 Go,Ordinateurs,198500,109400,-2.413,186824.0
+122,HP ProBook 450 SSD 256 Go,Ordinateurs,1473000,897900,-2.413,1533356.0
+123,Dell Latitude 5420 8 Go RAM,Ordinateurs,227000,170300,-2.413,290824.0
+124,Apple MacBook Air M1 SSD 256 Go,Ordinateurs,1292000,981200,-2.413,1675609.0
+125,Lenovo IdeaPad 3 16 Go RAM,Ordinateurs,422000,245200,-2.413,418731.0
+126,Asus ZenBook 14 SSD 256 Go,Ordinateurs,890000,678800,-2.413,1159196.0
+127,Lenovo IdeaPad 3 SSD 512 Go,Ordinateurs,1141500,682900,-2.413,1166198.0
+128,Dell Inspiron 15 SSD 256 Go,Ordinateurs,855000,600900,-2.413,1026165.0
+129,Asus VivoBook 15,Ordinateurs,982000,550400,-2.413,939926.0
+130,Apple MacBook Air M1 SSD 256 Go,Ordinateurs,705500,404200,-2.413,690258.0
+131,Acer Aspire 5 8 Go RAM,Ordinateurs,1473000,979000,-2.413,1671852.0
+132,Acer Aspire 5 SSD 256 Go,Ordinateurs,1328000,778500,-2.413,1329455.0
+133,Dell Latitude 5420 16 Go RAM,Ordinateurs,556500,386400,-2.413,659861.0
+134,Acer Aspire 5 SSD 256 Go,Ordinateurs,747500,438800,-2.413,749345.0
+135,Lenovo ThinkPad E14 SSD 256 Go,Ordinateurs,695000,464600,-2.413,793404.0
+136,HP ProBook 450,Ordinateurs,1429500,895100,-2.413,1528575.0
+137,Asus ZenBook 14 SSD 256 Go,Ordinateurs,974500,690500,-2.413,1179177.0
+138,Lenovo IdeaPad 3 16 Go RAM,Ordinateurs,1284000,895000,-2.413,1528404.0
+139,Asus VivoBook 15 SSD 512 Go,Ordinateurs,198500,129900,-2.413,221832.0
+140,Lenovo IdeaPad 3 8 Go RAM,Ordinateurs,278500,192500,-2.413,328735.0
+141,Asus ROG Strix 16 Go RAM,Ordinateurs,1024500,730500,-2.413,1247485.0
+142,Dell Inspiron 15 SSD 256 Go,Ordinateurs,612500,402900,-2.413,688038.0
+143,Asus ZenBook 14 16 Go RAM,Ordinateurs,636500,431600,-2.413,737049.0
+144,Acer Swift 3 SSD 512 Go,Ordinateurs,323000,218300,-2.413,372794.0
+145,Acer Swift 3 8 Go RAM,Ordinateurs,1229500,772800,-2.413,1319721.0
+146,Apple MacBook Air M1 16 Go RAM,Ordinateurs,206000,117000,-2.413,199803.0
+147,Apple MacBook Pro 14 SSD 512 Go,Ordinateurs,225000,139500,-2.413,238226.0
+148,Lenovo ThinkPad E14,Ordinateurs,1136500,836000,-2.413,1427649.0
+149,Apple MacBook Air M1 16 Go RAM,Ordinateurs,1266500,967700,-2.413,1652555.0
+150,Lenovo Legion 5,Ordinateurs,473000,274300,-2.413,468426.0
+151,Asus ZenBook 14 16 Go RAM,Ordinateurs,1443500,1153100,-2.413,1969165.0
+152,Acer Swift 3 8 Go RAM,Ordinateurs,1190000,864300,-2.413,1475977.0
+153,Acer Swift 3 SSD 512 Go,Ordinateurs,1015000,560900,-2.413,957857.0
+154,Dell Latitude 5420 16 Go RAM,Ordinateurs,780000,461300,-2.413,787769.0
+155,Lenovo Legion 5 SSD 512 Go,Ordinateurs,1485000,1023100,-2.413,1747162.0
+156,Apple MacBook Pro 14 SSD 512 Go,Ordinateurs,1028500,680900,-2.413,1162783.0
+157,Apple MacBook Air M1 8 Go RAM,Ordinateurs,258000,190600,-2.413,325490.0
+158,Lenovo ThinkPad E14 16 Go RAM,Ordinateurs,1390500,827600,-2.413,1413304.0
+159,Dell Latitude 5420 SSD 512 Go,Ordinateurs,210000,127700,-2.413,218075.0
+160,Dell Inspiron 15 16 Go RAM,Ordinateurs,1494000,1005900,-2.413,1717790.0
+161,HP Pavilion 15 8 Go RAM,Ordinateurs,478500,364000,-2.413,621608.0
+162,Asus ZenBook 14 SSD 256 Go,Ordinateurs,699000,517700,-2.413,884084.0
+163,Asus VivoBook 15 SSD 256 Go,Ordinateurs,644500,441400,-2.413,753785.0
+164,Lenovo Legion 5 SSD 512 Go,Ordinateurs,596500,442600,-2.413,755834.0
+165,Acer Nitro 5 8 Go RAM,Ordinateurs,831000,646000,-2.413,1103183.0
+166,Asus VivoBook 15 SSD 512 Go,Ordinateurs,668500,451000,-2.413,770179.0
+167,Apple MacBook Pro 14 16 Go RAM,Ordinateurs,291500,189300,-2.413,323270.0
+168,Apple MacBook Pro 14 SSD 256 Go,Ordinateurs,678500,430600,-2.413,735342.0
+169,Dell Inspiron 15 8 Go RAM,Ordinateurs,183500,143400,-2.413,244886.0
+170,Lenovo ThinkPad E14 8 Go RAM,Ordinateurs,342000,188700,-2.413,322246.0
+171,Anker Soundcore Life,Audio,177000,125300,-2.483,209791.0
+172,Bose SoundLink Flex Pro,Audio,220000,162800,-2.483,272577.0
+173,Samsung Galaxy Buds FE Pro,Audio,181500,143500,-2.483,240263.0
+174,Oraimo OpenPods 2024,Audio,23000,16800,-2.483,28128.0
+175,Oraimo OpenPods Pro,Audio,140500,100200,-2.483,167766.0
+176,Bose QuietComfort 45 2024,Audio,42500,31100,-2.483,52071.0
+177,Bose SoundLink Flex Pro,Audio,89500,51900,-2.483,86897.0
+178,JBL Flip 6 2024,Audio,240500,191500,-2.483,320630.0
+179,Bose QuietComfort 45,Audio,244500,159600,-2.483,267220.0
+180,Oraimo OpenPods,Audio,59000,44200,-2.483,74004.0
+181,Sony ULT Wear Pro,Audio,206500,115400,-2.483,193215.0
+182,Anker Soundcore Q30,Audio,95000,68200,-2.483,114188.0
+183,Oraimo BoomPop Pro,Audio,194500,149000,-2.483,249472.0
+184,Oraimo OpenPods 2024,Audio,98500,59900,-2.483,100291.0
+185,JBL Flip 6,Audio,215000,118400,-2.483,198238.0
+186,Samsung Galaxy Buds 2 2024,Audio,134500,87400,-2.483,146335.0
+187,Oraimo BoomPop Pro,Audio,169500,103200,-2.483,172789.0
+188,Bose SoundLink Flex Pro,Audio,196000,122400,-2.483,204935.0
+189,Oraimo OpenPods Pro,Audio,102000,63100,-2.483,105649.0
+190,Bose SoundLink Flex,Audio,171000,108600,-2.483,181830.0
+191,Anker Soundcore Q30 Pro,Audio,202500,161900,-2.483,271071.0
+192,Sony ULT Wear Pro,Audio,135500,93900,-2.483,157218.0
+193,Sony ULT Wear 2024,Audio,176500,123300,-2.483,206442.0
+194,Anker Soundcore Life 2024,Audio,58500,34100,-2.483,57094.0
+195,JBL Boombox 3,Audio,21000,12600,-2.483,21096.0
+196,JBL Boombox 3 Pro,Audio,240500,152900,-2.483,256002.0
+197,Anker Soundcore Life 2024,Audio,240000,177100,-2.483,296520.0
+198,Samsung Galaxy Buds FE,Audio,89500,54400,-2.483,91082.0
+199,Samsung Galaxy Buds 2 2024,Audio,227500,155200,-2.483,259853.0
+200,Oraimo FreePods 3 Pro,Audio,156500,97700,-2.483,163580.0
+201,Bose QuietComfort 45,Audio,84000,49400,-2.483,82711.0
+202,Bose QuietComfort 45,Audio,19500,14500,-2.483,24277.0
+203,Samsung Galaxy Buds FE Pro,Audio,112000,74900,-2.483,125406.0
+204,Bose SoundLink Flex 2024,Audio,67500,52300,-2.483,87566.0
+205,Sony ULT Wear Pro,Audio,50000,34500,-2.483,57764.0
+206,JBL Boombox 3 Pro,Audio,83000,56200,-2.483,94096.0
+207,Bose QuietComfort 45,Audio,13500,10600,-2.483,17748.0
+208,JBL Boombox 3,Audio,17500,9900,-2.483,16576.0
+209,Bose QuietComfort 45,Audio,131000,82200,-2.483,137628.0
+210,JBL Go 3,Audio,160500,90700,-2.483,151860.0
+211,Bose SoundLink Flex Pro,Audio,55500,34700,-2.483,58099.0
+212,Anker Soundcore Life Pro,Audio,42000,24200,-2.483,40518.0
+213,Anker Soundcore Q30,Audio,5000,3300,-2.483,5525.0
+214,Anker Soundcore Life,Audio,105000,78200,-2.483,130931.0
+215,Anker Soundcore Q30 Pro,Audio,68500,43100,-2.483,72163.0
+216,Sony ULT Wear Pro,Audio,216500,131400,-2.483,220004.0
+217,Oraimo FreePods 3,Audio,232500,130600,-2.483,218665.0
+218,Anker Soundcore Q30 2024,Audio,51500,28900,-2.483,48388.0
+219,Sony WH-1000XM4,Audio,230000,127000,-2.483,212637.0
+220,Sony ULT Wear,Audio,42500,29900,-2.483,50062.0
+221,Anker Soundcore Life,Audio,144000,100400,-2.483,168101.0
+222,Bose QuietComfort 45,Audio,73500,51800,-2.483,86729.0
+223,Anker Soundcore Life 2024,Audio,194000,148100,-2.483,247965.0
+224,Sony WH-1000XM4 2024,Audio,141000,98800,-2.483,165422.0
+225,Bose SoundLink Flex,Audio,93500,70400,-2.483,117871.0
+226,Sony WF-C500 2024,Audio,32500,19600,-2.483,32816.0
+227,Samsung Galaxy Buds 2 Pro,Audio,82500,46900,-2.483,78525.0
+228,JBL Flip 6 Pro,Audio,98500,58200,-2.483,97445.0
+229,Samsung Galaxy Buds FE 2024,Audio,178000,130700,-2.483,218832.0
+230,Sony WH-1000XM4 2024,Audio,41000,23800,-2.483,39849.0
+231,Oraimo FreePods 3 2024,Audio,174500,103500,-2.483,173291.0
+232,Samsung Galaxy Buds 2 2024,Audio,69500,38500,-2.483,64461.0
+233,Samsung Galaxy Buds FE Pro,Audio,148000,86000,-2.483,143991.0
+234,Bose QuietComfort 45 2024,Audio,106500,75100,-2.483,125741.0
+235,Sony WH-1000XM4 2024,Audio,17000,11800,-2.483,19757.0
+236,Sony WF-C500 Pro,Audio,244000,135300,-2.483,226534.0
+237,JBL Flip 6,Audio,61500,47200,-2.483,79027.0
+238,Sony WF-C500 Pro,Audio,50000,32400,-2.483,54248.0
+239,Oraimo BoomPop Pro,Audio,182500,126200,-2.483,211298.0
+240,Oraimo BoomPop 2024,Audio,41500,28100,-2.483,47048.0
+241,Bose QuietComfort 45,Audio,200000,136000,-2.483,227706.0
+242,Anker Soundcore Q30,Audio,194000,125800,-2.483,210628.0
+243,JBL Flip 6 Pro,Audio,41500,32800,-2.483,54917.0
+244,Sony ULT Wear,Audio,230000,178900,-2.483,299534.0
+245,Sony WH-1000XM4 Pro,Audio,120000,88000,-2.483,147339.0
+246,Bose SoundLink Flex Pro,Audio,106000,77900,-2.483,130429.0
+247,Samsung Galaxy Buds FE Pro,Audio,196500,136000,-2.483,227706.0
+248,JBL Go 3 2024,Audio,176000,131900,-2.483,220841.0
+249,Samsung Galaxy Buds 2,Audio,55000,40400,-2.483,67642.0
+250,JBL Tune 510 2024,Audio,247000,180200,-2.483,301710.0
+251,Sony Projecteur 2024,TV & image,528000,332500,-2.533,549395.0
+252,"Hisense Smart TV 50"" 2024",TV & image,516500,361700,-2.533,597643.0
+253,"TCL QLED 55"" 2024",TV & image,609000,364900,-2.533,602930.0
+254,"LG OLED 55""",TV & image,943000,557000,-2.533,920340.0
+255,"LG NanoCell 50""",TV & image,466500,367900,-2.533,607887.0
+256,"LG Smart TV 43""",TV & image,614500,473300,-2.533,782041.0
+257,"LG Smart TV 43""",TV & image,314000,187200,-2.533,309314.0
+258,"TCL Smart TV 32""",TV & image,594500,333600,-2.533,551213.0
+259,"Samsung QLED 55""",TV & image,1154500,823300,-2.533,1360352.0
+260,"TCL QLED 55""",TV & image,349500,217900,-2.533,360040.0
+261,"LG NanoCell 50""",TV & image,1063000,824200,-2.533,1361839.0
+262,"Sony Bravia 55"" 2024",TV & image,483500,274600,-2.533,453726.0
+263,"TCL Smart TV 32"" 2024",TV & image,427500,294200,-2.533,486111.0
+264,"Samsung QLED 65"" 2024",TV & image,914500,626900,-2.533,1035837.0
+265,"TCL Smart TV 32""",TV & image,371000,218900,-2.533,361692.0
+266,"Sony Bravia 55"" 2024",TV & image,671500,419000,-2.533,692320.0
+267,"Sony Bravia 55"" 2024",TV & image,539000,398800,-2.533,658944.0
+268,"Hisense Smart TV 40""",TV & image,759500,440600,-2.533,728010.0
+269,"LG NanoCell 50"" 2024",TV & image,201000,123800,-2.533,204557.0
+270,"Sony Bravia 55""",TV & image,812000,537900,-2.533,888781.0
+271,"Samsung Smart TV 43"" 2024",TV & image,878000,669700,-2.533,1106556.0
+272,Sony Projecteur,TV & image,683500,418300,-2.533,691164.0
+273,"LG Smart TV 43""",TV & image,268500,210700,-2.533,348143.0
+274,"Sony Bravia 43"" 2024",TV & image,454500,305700,-2.533,505113.0
+275,"TCL Smart TV 43""",TV & image,685500,451400,-2.533,745855.0
+276,"Samsung QLED 55""",TV & image,292500,196100,-2.533,324019.0
+277,Sony Projecteur,TV & image,271500,186900,-2.533,308818.0
+278,"LG Smart TV 43""",TV & image,1060000,614500,-2.533,1015348.0
+279,"Samsung QLED 65""",TV & image,446500,313400,-2.533,517836.0
+280,"TCL QLED 55""",TV & image,676500,403700,-2.533,667040.0
+281,Sony Projecteur,TV & image,998000,733900,-2.533,1212635.0
+282,"TCL QLED 55""",TV & image,1009500,641300,-2.533,1059630.0
+283,"TCL Smart TV 32"" 2024",TV & image,470000,351800,-2.533,581285.0
+284,"Hisense Smart TV 40"" 2024",TV & image,797000,480500,-2.533,793938.0
+285,"LG NanoCell 50"" 2024",TV & image,576000,408800,-2.533,675467.0
+286,"Samsung QLED 55"" 2024",TV & image,401500,227000,-2.533,375076.0
+287,"LG OLED 55"" 2024",TV & image,233000,137000,-2.533,226367.0
+288,"Hisense Smart TV 50""",TV & image,260000,163700,-2.533,270484.0
+289,"TCL QLED 55"" 2024",TV & image,601500,430000,-2.533,710496.0
+290,"TCL Smart TV 32""",TV & image,771000,490100,-2.533,809800.0
+291,"TCL Smart TV 32""",TV & image,842500,641500,-2.533,1059961.0
+292,"Samsung QLED 65""",TV & image,411500,303400,-2.533,501313.0
+293,"LG NanoCell 50""",TV & image,679500,485800,-2.533,802695.0
+294,"LG OLED 55"" 2024",TV & image,883000,648600,-2.533,1071692.0
+295,"LG OLED 55"" 2024",TV & image,713500,520800,-2.533,860526.0
+296,"TCL QLED 55"" 2024",TV & image,456500,324900,-2.533,536837.0
+297,"TCL Smart TV 43"" 2024",TV & image,543000,358300,-2.533,592025.0
+298,"Samsung QLED 65""",TV & image,450500,321600,-2.533,531385.0
+299,"Hisense Smart TV 50""",TV & image,111500,70400,-2.533,116323.0
+300,"Samsung Smart TV 43"" 2024",TV & image,1133000,693000,-2.533,1145055.0
+301,Razer Casque Kraken,Gaming,77500,47900,-2.532,79166.0
+302,Sony PlayStation 5,Gaming,151000,117400,-2.532,194032.0
+303,Logitech Clavier Gamer G213 Edition Standard,Gaming,277500,201200,-2.532,332532.0
+304,Razer Souris DeathAdder Edition Standard,Gaming,376500,265900,-2.532,439464.0
+305,Sony PlayStation 5 Edition Standard,Gaming,488000,317100,-2.532,524084.0
+306,Logitech Souris Gamer G502,Gaming,276500,212500,-2.532,351208.0
+307,Razer Souris DeathAdder,Gaming,230000,180300,-2.532,297989.0
+308,Razer Clavier BlackWidow,Gaming,430000,289100,-2.532,477808.0
+309,Nintendo Switch Lite Edition Standard,Gaming,177000,108100,-2.532,178661.0
+310,Razer Casque Kraken Edition Standard,Gaming,168000,133400,-2.532,220476.0
+311,Sony Manette DualSense Edition Standard,Gaming,385500,285500,-2.532,471858.0
+312,Nintendo Switch Lite,Gaming,354000,251700,-2.532,415995.0
+313,Logitech Clavier Gamer G213,Gaming,140000,97500,-2.532,161142.0
+314,Nintendo Switch,Gaming,333500,255100,-2.532,421614.0
+315,Nintendo Switch,Gaming,18500,11700,-2.532,19337.0
+316,Logitech Clavier Gamer G213 Edition Standard,Gaming,128500,95500,-2.532,157837.0
+317,Logitech Clavier Gamer G213,Gaming,204000,163100,-2.532,269562.0
+318,Sony Manette DualSense,Gaming,27500,19300,-2.532,31898.0
+319,Razer Casque Kraken,Gaming,490500,278300,-2.532,459958.0
+320,Sony Manette DualSense Edition Standard,Gaming,135500,104400,-2.532,172546.0
+321,Microsoft Xbox Series S,Gaming,69000,52300,-2.532,86438.0
+322,Sony PlayStation 5,Gaming,260500,175800,-2.532,290552.0
+323,Microsoft Manette Xbox Edition Standard,Gaming,331500,264500,-2.532,437150.0
+324,Razer Clavier BlackWidow Edition Standard,Gaming,66000,48300,-2.532,79827.0
+325,Sony Manette DualSense,Gaming,169000,112400,-2.532,185768.0
+326,Nintendo Switch,Gaming,193500,123500,-2.532,204114.0
+327,Microsoft Manette Xbox Edition Standard,Gaming,418500,316000,-2.532,522266.0
+328,Nintendo Switch Lite,Gaming,129000,96700,-2.532,159820.0
+329,Sony PlayStation 5,Gaming,448000,262500,-2.532,433845.0
+330,Razer Casque Kraken,Gaming,173000,118200,-2.532,195354.0
+331,Microsoft Xbox Series X Edition Standard,Gaming,40500,22200,-2.532,36691.0
+332,Nintendo Switch OLED Edition Standard,Gaming,62500,44500,-2.532,73547.0
+333,Logitech Casque G435,Gaming,96000,56300,-2.532,93049.0
+334,Razer Clavier BlackWidow Edition Standard,Gaming,283000,213600,-2.532,353026.0
+335,Sony PlayStation 5,Gaming,206000,151200,-2.532,249895.0
+336,Microsoft Xbox Series X Edition Standard,Gaming,112500,82900,-2.532,137012.0
+337,Logitech Souris Gamer G502,Gaming,193000,116700,-2.532,192875.0
+338,Microsoft Xbox Series S Edition Standard,Gaming,481000,274800,-2.532,454173.0
+339,Microsoft Xbox Series X,Gaming,100000,75500,-2.532,124782.0
+340,Microsoft Manette Xbox Edition Standard,Gaming,429000,306000,-2.532,505739.0
+341,Sony PlayStation 5 Edition Standard,Gaming,205500,157900,-2.532,260968.0
+342,Razer Casque Kraken Edition Standard,Gaming,235000,142200,-2.532,235020.0
+343,Nintendo Switch Lite Edition Standard,Gaming,155000,113700,-2.532,187917.0
+344,Nintendo Switch OLED Edition Standard,Gaming,201000,146200,-2.532,241631.0
+345,Nintendo Switch Edition Standard,Gaming,38500,26900,-2.532,44459.0
+346,Nintendo Switch Lite,Gaming,154500,114200,-2.532,188743.0
+347,Sony Manette DualSense,Gaming,287000,185500,-2.532,306584.0
+348,Microsoft Xbox Series X Edition Standard,Gaming,93500,64600,-2.532,106767.0
+349,Logitech Casque G435 Edition Standard,Gaming,47000,25800,-2.532,42641.0
+350,Microsoft Xbox Series S Edition Standard,Gaming,390000,231200,-2.532,382114.0
+351,Belkin Adaptateur secteur,Accessoires,24500,16300,-2.536,26912.0
+352,Belkin Cable,Accessoires,18000,12500,-2.536,20638.0
+353,Baseus Cable USB-C,Accessoires,34500,20800,-2.536,34342.0
+354,Oraimo Cable USB-C,Accessoires,7000,4100,-2.536,6769.0
+355,Oraimo Chargeur (noir),Accessoires,43000,27000,-2.536,44578.0
+356,Baseus Cable USB-C,Accessoires,27000,16600,-2.536,27407.0
+357,Belkin Cable (noir),Accessoires,11500,8800,-2.536,14529.0
+358,Belkin Adaptateur secteur,Accessoires,38000,21900,-2.536,36158.0
+359,Baseus Support telephone (noir),Accessoires,7500,5700,-2.536,9411.0
+360,Generic Coque (blanc),Accessoires,35000,27900,-2.536,46064.0
+361,Baseus Cable USB-C,Accessoires,21000,13200,-2.536,21794.0
+362,Belkin Chargeur (noir),Accessoires,45500,26900,-2.536,44413.0
+363,Generic Support voiture,Accessoires,25500,17100,-2.536,28233.0
+364,Belkin Adaptateur secteur (noir),Accessoires,40500,28100,-2.536,46394.0
+365,Baseus Cable USB-C (noir),Accessoires,17000,10100,-2.536,16676.0
+366,Oraimo Ecouteurs filaires (blanc),Accessoires,3000,1900,-2.536,3137.0
+367,Generic Protection ecran (noir),Accessoires,22500,15900,-2.536,26252.0
+368,Belkin Adaptateur secteur (blanc),Accessoires,37000,23300,-2.536,38469.0
+369,Anker Powerbank (blanc),Accessoires,29000,19200,-2.536,31700.0
+370,Samsung Coque Galaxy (noir),Accessoires,19500,12400,-2.536,20473.0
+371,Oraimo Cable USB-C (noir),Accessoires,6500,3800,-2.536,6274.0
+372,Generic Support voiture (noir),Accessoires,43000,29600,-2.536,48871.0
+373,Generic Support voiture (noir),Accessoires,14000,10500,-2.536,17336.0
+374,Belkin Chargeur (noir),Accessoires,7000,3900,-2.536,6439.0
+375,Samsung Cable (blanc),Accessoires,20500,16000,-2.536,26417.0
+376,Samsung Cable,Accessoires,31500,22600,-2.536,37314.0
+377,Belkin Cable,Accessoires,3000,2200,-2.536,3632.0
+378,Belkin Chargeur (noir),Accessoires,11500,6300,-2.536,10402.0
+379,Samsung Cable (blanc),Accessoires,17500,13400,-2.536,22124.0
+380,Baseus Adaptateur (noir),Accessoires,4500,2600,-2.536,4293.0
+381,Baseus Adaptateur,Accessoires,25500,17400,-2.536,28728.0
+382,Belkin Chargeur (blanc),Accessoires,40000,23800,-2.536,39295.0
+383,Belkin Cable (blanc),Accessoires,44000,28300,-2.536,46724.0
+384,Oraimo Cable USB-C (blanc),Accessoires,26000,17900,-2.536,29554.0
+385,Samsung Cable (blanc),Accessoires,31000,20300,-2.536,33516.0
+386,Baseus Cable USB-C (noir),Accessoires,8000,5900,-2.536,9741.0
+387,Anker Cable USB-C,Accessoires,15500,9700,-2.536,16015.0
+388,Belkin Chargeur,Accessoires,47000,31200,-2.536,51512.0
+389,Baseus Adaptateur (noir),Accessoires,9500,6800,-2.536,11227.0
+390,Baseus Adaptateur (noir),Accessoires,8500,5600,-2.536,9246.0
+391,Belkin Cable (blanc),Accessoires,12000,7000,-2.536,11557.0
+392,Anker Powerbank (noir),Accessoires,10500,8200,-2.536,13539.0
+393,Anker Powerbank,Accessoires,40500,32100,-2.536,52998.0
+394,Oraimo Powerbank (noir),Accessoires,49500,35000,-2.536,57786.0
+395,Baseus Support telephone,Accessoires,22500,12500,-2.536,20638.0
+396,Samsung Coque Galaxy (blanc),Accessoires,24500,13700,-2.536,22619.0
+397,Anker Cable USB-C (noir),Accessoires,16000,12400,-2.536,20473.0
+398,Oraimo Cable USB-C (blanc),Accessoires,38500,22300,-2.536,36818.0
+399,Anker Chargeur,Accessoires,42000,24700,-2.536,40781.0
+400,Samsung Chargeur (blanc),Accessoires,43500,28200,-2.536,46559.0
+401,Generic Protection ecran (blanc),Accessoires,5000,3900,-2.536,6439.0
+402,Anker Cable USB-C,Accessoires,26500,20900,-2.536,34507.0
+403,Anker Chargeur (blanc),Accessoires,43500,31600,-2.536,52173.0
+404,Generic Coque (blanc),Accessoires,31500,24700,-2.536,40781.0
+405,Samsung Chargeur (blanc),Accessoires,40000,27400,-2.536,45239.0
+406,Samsung Cable (blanc),Accessoires,12000,8700,-2.536,14364.0
+407,Generic Protection ecran (noir),Accessoires,23500,15100,-2.536,24931.0
+408,Baseus Cable USB-C (noir),Accessoires,7000,3900,-2.536,6439.0
+409,Samsung Cable (blanc),Accessoires,23000,18000,-2.536,29719.0
+410,Samsung Chargeur,Accessoires,17000,10200,-2.536,16841.0
+411,Anker Cable USB-C (blanc),Accessoires,12000,8100,-2.536,13373.0
+412,Belkin Adaptateur secteur (blanc),Accessoires,3500,1900,-2.536,3137.0
+413,Baseus Cable USB-C (blanc),Accessoires,5000,2900,-2.536,4788.0
+414,Samsung Coque Galaxy (blanc),Accessoires,14500,10200,-2.536,16841.0
+415,Generic Coque (noir),Accessoires,40000,28100,-2.536,46394.0
+416,Belkin Cable (blanc),Accessoires,8000,4500,-2.536,7430.0
+417,Baseus Cable USB-C (noir),Accessoires,23000,18000,-2.536,29719.0
+418,Baseus Cable USB-C (blanc),Accessoires,7500,4400,-2.536,7265.0
+419,Samsung Chargeur,Accessoires,33000,23700,-2.536,39130.0
+420,Baseus Adaptateur,Accessoires,38500,22800,-2.536,37644.0
+421,Generic Support voiture (blanc),Accessoires,11000,6300,-2.536,10402.0
+422,Baseus Support telephone (noir),Accessoires,3500,2300,-2.536,3797.0
+423,Anker Cable USB-C,Accessoires,25000,16700,-2.536,27572.0
+424,Baseus Adaptateur,Accessoires,37000,22400,-2.536,36983.0
+425,Generic Protection ecran (noir),Accessoires,4000,3100,-2.536,5118.0
+426,Baseus Support telephone (blanc),Accessoires,15500,8700,-2.536,14364.0
+427,Generic Support voiture (blanc),Accessoires,33000,24500,-2.536,40451.0
+428,Baseus Support telephone (noir),Accessoires,11000,7700,-2.536,12713.0
+429,Anker Powerbank (noir),Accessoires,33500,24000,-2.536,39625.0
+430,Belkin Adaptateur secteur (noir),Accessoires,30500,22900,-2.536,37809.0
+431,Baseus Support telephone,Accessoires,37000,24600,-2.536,40616.0
+432,Anker Powerbank (blanc),Accessoires,18500,11000,-2.536,18161.0
+433,Baseus Support telephone,Accessoires,37500,29000,-2.536,47880.0
+434,Anker Powerbank,Accessoires,6500,3800,-2.536,6274.0
+435,Anker Chargeur (noir),Accessoires,15500,10500,-2.536,17336.0
+436,Belkin Adaptateur secteur (blanc),Accessoires,10000,5900,-2.536,9741.0
+437,Generic Protection ecran (blanc),Accessoires,24500,14300,-2.536,23610.0
+438,Anker Chargeur,Accessoires,20000,13700,-2.536,22619.0
+439,Generic Support voiture,Accessoires,5000,3300,-2.536,5448.0
+440,Generic Protection ecran (blanc),Accessoires,7000,4600,-2.536,7595.0
+441,Baseus Adaptateur,Accessoires,13500,8600,-2.536,14199.0
+442,Anker Chargeur (noir),Accessoires,18000,10900,-2.536,17996.0
+443,Belkin Adaptateur secteur,Accessoires,17000,10500,-2.536,17336.0
+444,Oraimo Chargeur (noir),Accessoires,35500,22800,-2.536,37644.0
+445,Belkin Chargeur (noir),Accessoires,38500,30100,-2.536,49696.0
+446,Baseus Support telephone (noir),Accessoires,3000,2300,-2.536,3797.0
+447,Baseus Support telephone (noir),Accessoires,44500,34500,-2.536,56961.0
+448,Generic Protection ecran (noir),Accessoires,38000,21000,-2.536,34672.0
+449,Samsung Coque Galaxy (noir),Accessoires,25500,16600,-2.536,27407.0
+450,Samsung Cable (noir),Accessoires,32500,18700,-2.536,30874.0
+451,Amazfit Bip 5,Objets connectes,280500,213700,-2.328,374619.0
+452,Oraimo Tempo 2024,Objets connectes,54500,34200,-2.328,59953.0
+453,Xiaomi Smart Band 7 2024,Objets connectes,104500,73300,-2.328,128496.0
+454,Oraimo Smartwatch Pro,Objets connectes,348000,217100,-2.328,380579.0
+455,Samsung Galaxy Watch 6,Objets connectes,80000,45100,-2.328,79061.0
+456,Oraimo Tempo Pro,Objets connectes,34500,24800,-2.328,43475.0
+457,Amazfit Bip 5 2024,Objets connectes,73500,55300,-2.328,96942.0
+458,Samsung Galaxy Fit 3 2024,Objets connectes,272500,196000,-2.328,343590.0
+459,Oraimo Tempo Pro,Objets connectes,93500,57800,-2.328,101324.0
+460,Oraimo Tempo,Objets connectes,16500,10800,-2.328,18933.0
+461,Amazfit Bip 5 2024,Objets connectes,274500,203900,-2.328,357439.0
+462,Samsung Galaxy Fit 3 2024,Objets connectes,296500,163300,-2.328,286267.0
+463,Huawei Band 8 Pro,Objets connectes,348000,194700,-2.328,341311.0
+464,Samsung Galaxy Fit 3 Pro,Objets connectes,259000,148200,-2.328,259796.0
+465,Xiaomi Smart Band 7 Pro,Objets connectes,265000,170300,-2.328,298538.0
+466,Xiaomi Mi Band 8,Objets connectes,204000,136600,-2.328,239461.0
+467,Amazfit GTR 4 Pro,Objets connectes,230000,166100,-2.328,291175.0
+468,Oraimo Smartwatch Pro,Objets connectes,233500,182300,-2.328,319574.0
+469,Xiaomi Mi Band 8 2024,Objets connectes,259000,191300,-2.328,335351.0
+470,Xiaomi Smart Band 7 Pro,Objets connectes,58500,34800,-2.328,61005.0
+471,Huawei Watch GT 4,Objets connectes,111500,83500,-2.328,146377.0
+472,Oraimo Tempo 2024,Objets connectes,228000,141000,-2.328,247175.0
+473,Xiaomi Mi Band 8,Objets connectes,60000,47100,-2.328,82567.0
+474,Huawei Band 8,Objets connectes,149500,97100,-2.328,170217.0
+475,Samsung Galaxy Watch 6,Objets connectes,69000,48900,-2.328,85722.0
+476,Amazfit Bip 5,Objets connectes,146500,111700,-2.328,195811.0
+477,Samsung Galaxy Fit 3,Objets connectes,91000,51100,-2.328,89579.0
+478,Oraimo Tempo,Objets connectes,48000,35500,-2.328,62232.0
+479,Amazfit Bip 5,Objets connectes,276500,216900,-2.328,380228.0
+480,Amazfit GTR 4 Pro,Objets connectes,33500,22800,-2.328,39969.0
+481,Oraimo Tempo,Objets connectes,289500,213400,-2.328,374093.0
+482,Samsung Galaxy Watch 6,Objets connectes,345500,233400,-2.328,409153.0
+483,Amazfit GTS 4 Pro,Objets connectes,210000,136200,-2.328,238760.0
+484,Amazfit GTR 4 2024,Objets connectes,282000,207000,-2.328,362873.0
+485,Samsung Galaxy Fit 3,Objets connectes,190000,113400,-2.328,198792.0
+486,Amazfit GTS 4 2024,Objets connectes,17500,13600,-2.328,23841.0
+487,Xiaomi Mi Watch Pro,Objets connectes,132500,94000,-2.328,164783.0
+488,Huawei Watch GT 4 2024,Objets connectes,89000,58100,-2.328,101850.0
+489,Amazfit GTR 4,Objets connectes,110000,82100,-2.328,143922.0
+490,Samsung Galaxy Fit 3 2024,Objets connectes,175500,109700,-2.328,192305.0
+491,Samsung Galaxy Fit 3,Objets connectes,127500,89400,-2.328,156719.0
+492,Amazfit GTR 4 2024,Objets connectes,332500,201100,-2.328,352531.0
+493,Oraimo Tempo,Objets connectes,203500,137100,-2.328,240338.0
+494,Xiaomi Smart Band 7 Pro,Objets connectes,289000,161100,-2.328,282410.0
+495,Oraimo Smartwatch Pro,Objets connectes,331500,186500,-2.328,326937.0
+496,Amazfit GTS 4,Objets connectes,190500,140300,-2.328,245948.0
+497,Amazfit GTR 4,Objets connectes,87000,59400,-2.328,104129.0
+498,Amazfit GTR 4,Objets connectes,281500,156700,-2.328,274697.0
+499,Samsung Galaxy Fit 3 Pro,Objets connectes,252500,178900,-2.328,313614.0
+500,Amazfit GTR 4 Pro,Objets connectes,49000,32400,-2.328,56798.0

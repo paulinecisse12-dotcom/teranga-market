@@ -1,0 +1,6 @@
+__pycache__/
+*.pyc
+export_modeles.py
+Dockerfile
+.dockerignore
+docker-compose.yml

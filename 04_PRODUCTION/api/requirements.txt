@@ -1,0 +1,6 @@
+# Dependances de l'API (legeres — juste ce qu'il faut pour servir les artefacts)
+fastapi
+uvicorn[standard]
+pandas
+numpy
+joblib
