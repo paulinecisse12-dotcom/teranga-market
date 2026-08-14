@@ -19,6 +19,14 @@ matplotlib
 # --- MLOps ---
 mlflow
 
+# --- Mise en production : API (FastAPI) + Dashboard (Dash) ---
+fastapi
+uvicorn[standard]
+joblib
+dash
+plotly
+requests
+
 # --- Notebooks ---
 jupyterlab
 ipykernel
