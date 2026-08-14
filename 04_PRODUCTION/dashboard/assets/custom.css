@@ -1,0 +1,59 @@
+/* Thème Teranga Market pour les composants Dash 4.x (curseur, menu) */
+/* Charte : navy #003B7A + orange #FF7A00 */
+
+/* --- Sidebar : liens du menu --- */
+html { scroll-behavior: smooth; }
+[id^="sec-"] { scroll-margin-top: 18px; }
+.sidebar .nav-item {
+    display: flex;
+    align-items: center;
+    padding: 10px 14px;
+    margin-bottom: 4px;
+    color: rgba(255, 255, 255, 0.82);
+    text-decoration: none;
+    border-radius: 8px;
+    border-left: 3px solid transparent;
+    transition: background 0.15s, border-color 0.15s;
+}
+.sidebar .nav-item:hover {
+    background: rgba(255, 255, 255, 0.10);
+    color: #FFFFFF;
+    border-left-color: #FF7A00;
+}
+
+/* --- Curseur (dcc.Slider) : navy au lieu du violet par défaut --- */
+.dash-slider-range {
+    background-color: #003B7A !important;
+}
+.dash-slider-thumb {
+    background-color: #003B7A !important;
+}
+.dash-slider-thumb:hover,
+.dash-slider-thumb:active,
+.dash-slider-thumb:focus {
+    box-shadow: 0 0 0 5px rgba(255, 122, 0, 0.30) !important;
+}
+.dash-slider-tooltip {
+    background-color: #003B7A !important;
+    color: #FFFFFF !important;
+}
+
+/* --- Menu déroulant (dcc.Dropdown) : accent navy --- */
+.dash-dropdown,
+.dash-dropdown-trigger {
+    accent-color: #003B7A !important;
+}
+.dash-dropdown:focus-within,
+.dash-dropdown-trigger:focus,
+.dash-dropdown-trigger:focus-visible {
+    outline-color: #003B7A !important;
+    border-color: #003B7A !important;
+    box-shadow: 0 0 0 3px rgba(0, 59, 122, 0.22) !important;
+}
+.dash-dropdown-option:hover,
+.dash-dropdown-option[aria-selected="true"],
+.VirtualizedSelectFocusedOption,
+.Select-option.is-focused {
+    background-color: #E3EDF7 !important;
+    color: #003B7A !important;
+}
