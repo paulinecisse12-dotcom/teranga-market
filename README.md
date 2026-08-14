@@ -25,7 +25,7 @@ Le projet couvre toute la chaîne : cadrage → architecture → pipeline de don
 | `01_ARCHITECTURE/` | Schéma d'architecture technique + schéma de données | ✅ |
 | `02_DONNEES/` | Génération du dataset, ingestion Spark, warehouse DuckDB, qualité, streaming Kafka, orchestration Airflow | ✅ |
 | `03_MODELES/` | Les 3 modèles (notebooks) + évaluation | ✅ |
-| `04_PRODUCTION/` | MLOps (MLflow), API (FastAPI + Docker), dashboard (Dash) | 🔶 en cours |
+| `04_PRODUCTION/` | MLOps (MLflow), API (FastAPI + Docker), dashboard (Dash) | ✅ |
 | `05_LIVRABLES/` | Business case, rapport final, présentation | ⬜ à venir |
 
 ---
@@ -64,11 +64,11 @@ Chaque modèle est un **notebook reproductible**, évalué contre une **baseline
 
 ---
 
-## ⚙️ MLOps & mise en production (Partie 5)
+## ⚙️ Mise en production (Partie 5) — ✅
 
-- **MLflow** — suivi des expériences (`04_PRODUCTION/mlops/`). Les 3 approches de prévision sont enregistrées et comparables dans l'UI MLflow.
-- **API FastAPI + Docker** *(à venir)* — expose recommandations & prix dynamique.
-- **Dashboard Dash** *(à venir)* — KPI décisionnels (marge, rotation stock, conversion, CLTV).
+- **MLOps** (`04_PRODUCTION/mlops/`) — suivi des expériences (MLflow), monitoring de dérive (PSI), CI/CD (GitHub Actions). → `GUIDE_MLOPS.md`
+- **API FastAPI + Docker** (`04_PRODUCTION/api/`) — expose prix optimal, recommandations et produits similaires. → `GUIDE_API.md`
+- **Dashboard Dash** (`04_PRODUCTION/dashboard/`) — **Cockpit Décisionnel** : KPI, santé des modèles, opportunités de prix, simulateur interactif, remises par segment, prévision, promotions, carte du Sénégal, et reco en direct (branchée sur l'API). → `GUIDE_DASHBOARD.md`
 
 ---
 
@@ -76,38 +76,62 @@ Chaque modèle est un **notebook reproductible**, évalué contre une **baseline
 
 **Données** : Python, PySpark (batch), Kafka (streaming), Airflow (orchestration), DuckDB (warehouse), Parquet (data lake).
 **Data science** : pandas, scikit-learn, Prophet, LightGBM, statsmodels.
-**MLOps / prod** : MLflow, FastAPI, Docker *(à venir)*, Dash *(à venir)*.
+**MLOps / prod** : MLflow, FastAPI, Docker, Dash, Plotly, requests.
 
 ---
 
 ## 🚀 Installation & exécution
 
+**Prérequis :** Python 3.11+ et Git installés.
+
 ```bash
-# 1) Environnement virtuel (déjà présent : .venv)
+# 1) Cloner le projet (code + données inclus)
+git clone https://github.com/paulinecisse12-dotcom/teranga-market.git
+cd teranga-market
+
+# 2) Environnement virtuel
 python -m venv .venv
 .venv\Scripts\activate            # Windows
+# source .venv/bin/activate       # Mac / Linux
 
-# 2) Dépendances
-pip install pandas numpy duckdb pyarrow scikit-learn matplotlib statsmodels lightgbm prophet mlflow jupyterlab
+# 3) Dépendances (tout le projet)
+pip install -r requirements.txt
+```
 
-# 3) Notebooks des modèles (Partie 4)
-#    Ouvrir 03_MODELES/**/*.ipynb dans VS Code / JupyterLab (noyau = .venv)
+### Lancer le Cockpit (dashboard + API)
 
-# 4) Suivi MLflow (Partie 5)
-python 04_PRODUCTION/mlops/01_mlflow_forecasting.py
-cd 04_PRODUCTION/mlops
-mlflow ui --backend-store-uri sqlite:///mlflow.db     # http://127.0.0.1:5000
+Le dashboard a besoin de l'API pour la section « reco en direct » → **2 terminaux** :
+
+```bash
+# Terminal 1 — API (port 8000)
+cd 04_PRODUCTION/api && uvicorn main:app --reload
+
+# Terminal 2 — Dashboard (port 8050)
+cd 04_PRODUCTION/dashboard && python app.py
+```
+→ ouvrir **http://127.0.0.1:8050** · guide détaillé : `04_PRODUCTION/dashboard/GUIDE_DASHBOARD.md`
+
+> ✅ Les **données** (warehouse DuckDB) et les **prévisions** (`forecast.csv`) sont dans le dépôt : rien à régénérer.
+> Les icônes et le fond de carte sont en local → le dashboard marche **hors-ligne**.
+
+### Autres briques
+
+```bash
+# Notebooks des modèles (Partie 4) : ouvrir 03_MODELES/**/*.ipynb (noyau = .venv)
+
+# Suivi MLflow (Partie 5)
+cd 04_PRODUCTION/mlops && mlflow ui --backend-store-uri sqlite:///mlflow.db   # http://127.0.0.1:5000
 ```
 
 > ⚠️ **Spark** ne fonctionne que sous **WSL/Ubuntu** (Java 11 + PySpark 3.5.3), pas sous Windows.
-> Lancer via `wsl` puis `spark-submit /mnt/d/PROJET_FINAL/...`.
+> Il n'est nécessaire que pour **régénérer** les données ; le warehouse fourni suffit pour tout lancer.
 
 ---
 
 ## 📌 Statut du projet
 
 - ✅ Parties 1 → 4 (cadrage, architecture, données, **3 modèles + synthèse**)
-- 🔶 Partie 5 (MLOps MLflow ✅ ; API + dashboard à venir)
+- ✅ Partie 5 (MLOps + **API FastAPI/Docker** + **Dashboard Cockpit Décisionnel**)
 - ⬜ Partie 6 (business case, rapport, présentation)
 
 ---
