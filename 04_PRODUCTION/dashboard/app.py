@@ -770,16 +770,21 @@ app.layout = html.Div(
                 ),
 
                 # KPI
-                html.Div(id="sec-kpi", style={"display": "flex", "gap": "16px", "flexWrap": "wrap"},
-                         children=[
-                             carte_kpi("Chiffre d'affaires", fcfa(KPIS["ca"]), "FCFA"),
-                             carte_kpi("Marge totale", fcfa(KPIS["marge"]), f"FCFA · {KPIS['taux_marge']:.1f}%"),
-                             carte_kpi("Clients actifs", fcfa(KPIS["clients"])),
-                             carte_kpi("Panier moyen", fcfa(KPIS["panier"]), "FCFA"),
-                             carte_kpi("Taux de conversion", f"{KPIS['conversion']:.1f} %".replace(".", ","), "vue → achat"),
-                             carte_kpi("Rotation de stock", f"{KPIS['rotation']:.1f}×".replace(".", ","), "sur 12 mois"),
-                             carte_kpi("CLTV", fcfa(KPIS["cltv"]), "marge nette / client"),
-                         ]),
+                html.Div(id="sec-kpi", children=[
+                    html.Div(style={"display": "flex", "gap": "16px", "flexWrap": "wrap"},
+                             children=[
+                                 carte_kpi("Chiffre d'affaires", fcfa(KPIS["ca"]), "FCFA"),
+                                 carte_kpi("Marge totale", fcfa(KPIS["marge"]), f"FCFA · {KPIS['taux_marge']:.1f}%"),
+                                 carte_kpi("Clients actifs", fcfa(KPIS["clients"])),
+                                 carte_kpi("Panier moyen", fcfa(KPIS["panier"]), "FCFA"),
+                             ]),
+                    html.Div(style={"display": "flex", "gap": "16px", "flexWrap": "wrap", "marginTop": "16px"},
+                             children=[
+                                 carte_kpi("Taux de conversion", f"{KPIS['conversion']:.1f} %".replace(".", ","), "vue → achat"),
+                                 carte_kpi("Rotation de stock", f"{KPIS['rotation']:.1f}×".replace(".", ","), "sur 12 mois"),
+                                 carte_kpi("CLTV", fcfa(KPIS["cltv"]), "marge nette / client"),
+                             ]),
+                ]),
 
                 html.Div(carte_sante(), id="sec-sante"),
 
