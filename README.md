@@ -38,7 +38,7 @@ Le projet couvre toute la chaîne : cadrage → architecture → pipeline de don
 | `clients` | 10 000 | profils clients |
 | `transactions` | 100 000 | ventes sur **12 mois** (juil. 2025 → juin 2026) — table de faits |
 | `navigation` | 1 000 000 | événements web (vue, clic, ajout panier) |
-| `promotions` | 10 | campagnes datées (Black Friday, Tabaski, Korité…) |
+| `promotions` | 10 | 9 campagnes datées (Black Friday, Tabaski, Korité…) + 1 ligne « Aucune promotion » |
 
 Modèle en **étoile** ; entrepôt final : **DuckDB** (`02_DONNEES/warehouse/teranga.duckdb`).
 

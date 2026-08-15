@@ -25,15 +25,18 @@ ICI = Path(__file__).resolve().parent            # .../04_PRODUCTION/dashboard
 DB = ICI.parents[1] / "02_DONNEES" / "warehouse" / "teranga.duckdb"
 
 def charger_kpis():
-    """Calcule les 4 indicateurs clés une seule fois au démarrage."""
+    """Calcule les indicateurs clés une seule fois au démarrage."""
     con = duckdb.connect(str(DB), read_only=True)
-    ca, marge, nb_clients, nb_cmd = con.execute("""
+    ca, marge, nb_clients, nb_cmd, unites = con.execute("""
         SELECT SUM(t.quantite * t.prix_unitaire),
                SUM(t.quantite * (t.prix_unitaire - p.cout_unitaire)),
                COUNT(DISTINCT t.id_client),
-               COUNT(DISTINCT t.id_transaction)
+               COUNT(DISTINCT t.id_transaction),
+               SUM(t.quantite)
         FROM transactions t JOIN produits p ON t.id_produit = p.id_produit
     """).fetchone()
+    vues  = con.execute("SELECT COUNT(*) FROM navigation WHERE action = 'vue'").fetchone()[0]
+    stock = con.execute("SELECT SUM(stock) FROM produits").fetchone()[0]
     con.close()
     return {
         "ca": ca,
@@ -41,6 +44,9 @@ def charger_kpis():
         "taux_marge": marge / ca * 100,
         "clients": nb_clients,
         "panier": ca / nb_cmd,
+        "conversion": nb_cmd / vues * 100,   # entonnoir vue -> achat
+        "rotation": unites / stock,          # nb de fois que le stock tourne sur 12 mois
+        "cltv": marge / nb_clients,          # marge nette moyenne par client
     }
 
 KPIS = charger_kpis()
@@ -631,6 +637,74 @@ def carte_kpi(titre, valeur, unite=""):
         ],
     )
 
+# --- Couverture de stock : demande prévue (Prophet) vs stock disponible -----
+FORECAST_CSV = ICI / "forecast.csv"
+
+def charger_couverture_stock():
+    """Croise la demande prévue (Prophet) et le stock, par catégorie.
+
+    jours de couverture = stock disponible / demande quotidienne prévue.
+    <30 j = risque de rupture · 30–90 j = sain · >90 j = surstock.
+    """
+    prev = pd.read_csv(FORECAST_CSV)
+    prev = prev[prev["type"] == "prevision"]
+    horizon = int(prev["ds"].nunique())
+    dem = prev.groupby("categorie")["yhat"].sum().clip(lower=0)   # demande prévue sur l'horizon
+    con = duckdb.connect(str(DB), read_only=True)
+    stock = con.execute("SELECT categorie, SUM(stock) AS s FROM produits GROUP BY 1").fetchdf()
+    con.close()
+    df = stock.set_index("categorie")
+    df["demande"] = dem
+    df["jours"] = (df["s"] / (df["demande"] / horizon)).round(0)
+    return df.sort_values("jours"), horizon
+
+STOCK_COUV, STOCK_HORIZON = charger_couverture_stock()
+
+def _statut_stock(jours):
+    """Jours de couverture -> (couleur, libellé)."""
+    if jours < 30:
+        return "#C0392B", "Risque de rupture"
+    if jours <= 90:
+        return "#2E9E5B", "Sain"
+    return ORANGE, "Surstock"
+
+def _voyant_stock(cat, row):
+    coul, libelle = _statut_stock(row["jours"])
+    return html.Div(
+        style={"flex": "1", "minWidth": "210px", "display": "flex", "alignItems": "flex-start", "gap": "11px",
+               "background": FOND, "borderRadius": "10px", "padding": "12px 14px"},
+        children=[
+            html.Div(style={"width": "12px", "height": "12px", "borderRadius": "50%",
+                            "background": coul, "marginTop": "4px", "flexShrink": "0"}),
+            html.Div([
+                html.Div(cat, style={"color": TEXTE, "fontSize": "14px", "fontWeight": "500"}),
+                html.Div(f"{libelle} · {row['jours']:.0f} j de couverture",
+                         style={"color": coul, "fontSize": "12px", "fontWeight": "700", "marginTop": "2px"}),
+                html.Div(f"stock {int(row['s'])} u · demande prévue {int(row['demande'])} u / {STOCK_HORIZON} j",
+                         style={"color": GRIS, "fontSize": "11px", "marginTop": "2px"}),
+            ]),
+        ],
+    )
+
+def carte_stock():
+    """Brique : couverture de stock (demande prévue vs stock) — repère rupture ET surstock."""
+    return html.Div(
+        style={"background": CARTE, "borderRadius": "14px", "padding": "18px 22px",
+               "marginTop": "18px", "border": "1px solid #E6EBE8", "borderTop": f"3px solid {ORANGE}"},
+        children=[
+            html.Div(style={"display": "flex", "alignItems": "center", "gap": "10px", "marginBottom": "12px"}, children=[
+                html.I(className="fa-solid fa-boxes-stacked", style={"fontSize": "17px", "color": ORANGE, "width": "24px", "textAlign": "center"}),
+                html.Div([
+                    html.Div("Couverture de stock", style={"color": TEXTE, "fontSize": "17px", "fontWeight": "700"}),
+                    html.Div(f"Demande prévue ({STOCK_HORIZON} j, Prophet) vs stock · rupture < 30 j · sain 30–90 j · surstock > 90 j",
+                             style={"color": GRIS, "fontSize": "12px"}),
+                ]),
+            ]),
+            html.Div(style={"display": "flex", "gap": "12px", "flexWrap": "wrap"},
+                     children=[_voyant_stock(cat, r) for cat, r in STOCK_COUV.iterrows()]),
+        ],
+    )
+
 # --- 3) Navigation (sidebar) ------------------------------------------------
 NAV = [
     ("sec-kpi",       "fa-gauge-high",       "Indicateurs"),
@@ -639,6 +713,7 @@ NAV = [
     ("sec-remise",    "fa-bullseye",         "Remises segment"),
     ("sec-ca",        "fa-chart-column",     "Chiffre d'affaires"),
     ("sec-prevision", "fa-chart-line",       "Prévision demande"),
+    ("sec-stock",     "fa-boxes-stacked",    "Couverture stock"),
     ("sec-promo",     "fa-tag",              "Promotions"),
     ("sec-carte",     "fa-map-location-dot", "Carte Sénégal"),
     ("sec-reco",      "fa-robot",            "Recommandations"),
@@ -665,7 +740,7 @@ def sidebar():
     )
 
 # --- 4) L'application Dash ---------------------------------------------------
-app = Dash(__name__, title="Cockpit Teranga")
+app = Dash(__name__, title="Dashboard Teranga")
 
 app.layout = html.Div(
     style={"background": FOND, "minHeight": "100vh",
@@ -685,7 +760,7 @@ app.layout = html.Div(
                            "flexWrap": "wrap", "gap": "10px", "marginBottom": "22px"},
                     children=[
                         html.Div([
-                            html.Span("Cockpit ", style={"color": BLEU, "fontSize": "24px", "fontWeight": "700"}),
+                            html.Span("Dashboard ", style={"color": BLEU, "fontSize": "24px", "fontWeight": "700"}),
                             html.Span("Décisionnel", style={"color": ORANGE, "fontSize": "24px", "fontWeight": "700"}),
                         ]),
                         html.Span("juillet 2025 → juin 2026",
@@ -701,6 +776,9 @@ app.layout = html.Div(
                              carte_kpi("Marge totale", fcfa(KPIS["marge"]), f"FCFA · {KPIS['taux_marge']:.1f}%"),
                              carte_kpi("Clients actifs", fcfa(KPIS["clients"])),
                              carte_kpi("Panier moyen", fcfa(KPIS["panier"]), "FCFA"),
+                             carte_kpi("Taux de conversion", f"{KPIS['conversion']:.1f} %".replace(".", ","), "vue → achat"),
+                             carte_kpi("Rotation de stock", f"{KPIS['rotation']:.1f}×".replace(".", ","), "sur 12 mois"),
+                             carte_kpi("CLTV", fcfa(KPIS["cltv"]), "marge nette / client"),
                          ]),
 
                 html.Div(carte_sante(), id="sec-sante"),
@@ -715,6 +793,7 @@ app.layout = html.Div(
                 html.Div(carte_remise(), id="sec-remise"),
                 html.Div(carte_graphiques(), id="sec-ca"),
                 html.Div(carte_prevision(), id="sec-prevision"),
+                html.Div(carte_stock(), id="sec-stock"),
                 html.Div(carte_promo(), id="sec-promo"),
                 html.Div(carte_geographie(), id="sec-carte"),
                 html.Div(carte_reco(), id="sec-reco"),

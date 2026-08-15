@@ -32,22 +32,37 @@ décisionnel** : il montre **quelles décisions prendre et combien ça rapporte*
 
 ---
 
-## 3. Ce que le dashboard affiche (10 sections)
+## 3. Ce que le dashboard affiche (11 sections)
 
 | # | Section | Ce qu'elle montre | Source |
 |---|---|---|---|
-| 1 | **Indicateurs (KPI)** | CA, marge, clients actifs, panier moyen | Warehouse DuckDB |
+| 1 | **Indicateurs (KPI)** | 7 cadrans : CA, marge, clients actifs, panier moyen, taux de conversion, rotation de stock, CLTV | Warehouse DuckDB |
 | 2 | **Santé des modèles** | Voyants de dérive (PSI) — alerte de ré-entraînement | Monitoring MLOps |
 | 3 | **Opportunités de prix** | Top produits à re-tarifer + gain de marge (+629 M/an) | Modèle pricing (4.2) |
 | 4 | **Simulateur « et si… »** | Curseur de prix → marge recalculée en direct | Élasticité (4.2) |
 | 5 | **Remise par segment** | Remise conseillée par type de client (règle métier CRM) | Segments + valeur client |
 | 6 | **Chiffre d'affaires** | CA par mois + par catégorie | Warehouse DuckDB |
 | 7 | **Prévision de la demande** | Demande réelle + prévision 30 j par catégorie | Modèle Prophet (4.1) |
-| 8 | **Impact des promotions** | CA/jour ×1,9 les jours de promo | Warehouse DuckDB |
-| 9 | **Carte du Sénégal** | CA par ville (bulles) | Warehouse DuckDB |
-| 10 | **Reco en direct** | Recommandations d'un client via l'**API** | API FastAPI (port 8000) |
+| 8 | **Couverture de stock** | Jours de couverture par catégorie → rupture / sain / surstock | Prophet (4.1) + stock |
+| 9 | **Impact des promotions** | CA/jour ×1,9 les jours de promo | Warehouse DuckDB |
+| 10 | **Carte du Sénégal** | CA par ville (bulles) | Warehouse DuckDB |
+| 11 | **Reco en direct** | Recommandations d'un client via l'**API** | API FastAPI (port 8000) |
 
 > Le **menu latéral** (sidebar) permet de sauter directement à une section d'un clic.
+
+### Les 7 indicateurs du bandeau
+
+Les 4 premiers sont directs (CA, marge, clients actifs, panier moyen). Les **3 derniers** reprennent les KPI
+attendus par le sujet (*rotation stock, taux de conversion, CLTV*) et sont chacun branchés sur un objectif SMART :
+
+| KPI | Formule | Valeur | Objectif servi |
+|---|---|---|---|
+| **Taux de conversion** | achats ÷ vues produit | 14,3 % (vue → achat) | O3 — +15 % de conversion |
+| **Rotation de stock** | unités vendues ÷ stock total | 1,9× / 12 mois | O2 — −20 % de ruptures |
+| **CLTV** (marge nette / client) | marge totale ÷ clients actifs | 899 792 FCFA | O4 — −10 % de churn |
+
+> *Nuance assumée : la CLTV est une version simplifiée (marge moyenne sur 12 mois, pas une projection) ;
+> la conversion est calculée au niveau « vue produit » car le dataset trace les vues de produits.*
 
 ---
 
@@ -109,6 +124,11 @@ Changer une couleur là-bas la met à jour **partout**. Le thème des composants
 - **Simulateur** : « On fait varier un prix en direct et on voit la marge évoluer — le jury peut jouer avec. »
 - **Santé des modèles** : « Le voyant rouge signale que la demande a dérivé → il faut ré-entraîner. C'est le
   MLOps rendu visible. »
+- **KPI branchés aux objectifs** : « Nos 3 KPI de pilotage (conversion, rotation de stock, CLTV) ne sont pas
+  décoratifs — chacun répond à un **objectif SMART** du cahier des charges (O3, O2, O4) et déclenche une action. »
+- **Couverture de stock** : « On croise la prévision de demande (Prophet) avec le stock → on repère les
+  catégories en **surstock** (argent immobilisé) et celles à **risque de rupture**. C'est l'objectif O2
+  (réduire les ruptures) rendu concret : *prévoir la demande **pour anticiper les stocks***. »
 - **Bout-en-bout** : « La section reco appelle notre **API** en temps réel : toute la chaîne fonctionne. »
 
 ---
