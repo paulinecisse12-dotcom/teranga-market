@@ -26,7 +26,7 @@ Le projet couvre toute la chaîne : cadrage → architecture → pipeline de don
 | `02_DONNEES/` | Génération du dataset, ingestion Spark, warehouse DuckDB, qualité, streaming Kafka, orchestration Airflow | ✅ |
 | `03_MODELES/` | Les 3 modèles (notebooks) + évaluation | ✅ |
 | `04_PRODUCTION/` | MLOps (MLflow), API (FastAPI + Docker), dashboard (Dash) | ✅ |
-| `05_LIVRABLES/` | Business case, rapport final, présentation | ⬜ à venir |
+| `05_LIVRABLES/` | Business case, rapport final, présentation | ✅ |
 
 ---
 
@@ -68,7 +68,7 @@ Chaque modèle est un **notebook reproductible**, évalué contre une **baseline
 
 - **MLOps** (`04_PRODUCTION/mlops/`) — suivi des expériences (MLflow), monitoring de dérive (PSI), CI/CD (GitHub Actions). → `GUIDE_MLOPS.md`
 - **API FastAPI + Docker** (`04_PRODUCTION/api/`) — expose prix optimal, recommandations et produits similaires. → `GUIDE_API.md`
-- **Dashboard Dash** (`04_PRODUCTION/dashboard/`) — **Cockpit Décisionnel** : KPI, santé des modèles, opportunités de prix, simulateur interactif, remises par segment, prévision, promotions, carte du Sénégal, et reco en direct (branchée sur l'API). → `GUIDE_DASHBOARD.md`
+- **Dashboard Dash** (`04_PRODUCTION/dashboard/`) — **Cockpit Décisionnel** (11 sections) : KPI (CA, marge, conversion, rotation de stock, CLTV…), santé des modèles (PSI), opportunités de prix, simulateur interactif, remises par segment, chiffre d'affaires, prévision, **couverture de stock**, impact des promotions, carte du Sénégal, et reco en direct (branchée sur l'API). → `GUIDE_DASHBOARD.md`
 
 ---
 
@@ -132,7 +132,7 @@ cd 04_PRODUCTION/mlops && mlflow ui --backend-store-uri sqlite:///mlflow.db   # 
 
 - ✅ Parties 1 → 4 (cadrage, architecture, données, **3 modèles + synthèse**)
 - ✅ Partie 5 (MLOps + **API FastAPI/Docker** + **Dashboard Cockpit Décisionnel**)
-- ⬜ Partie 6 (business case, rapport, présentation)
+- ✅ Partie 6 (business case, rapport final, présentation)
 
 ---
 
