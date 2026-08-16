@@ -103,7 +103,7 @@ pip install -r requirements.txt
 Le dashboard a besoin de l'API pour la section « reco en direct » → **2 terminaux** :
 
 ```bash
-# Terminal 1 — API (port 8000)
+# Terminal 1 — API (port 8000) · doc interactive (Swagger) : http://127.0.0.1:8000/docs
 cd 04_PRODUCTION/api && uvicorn main:app --reload
 
 # Terminal 2 — Dashboard (port 8050)
@@ -117,10 +117,14 @@ cd 04_PRODUCTION/dashboard && python app.py
 ### Autres briques
 
 ```bash
-# Notebooks des modèles (Partie 4) : ouvrir 03_MODELES/**/*.ipynb (noyau = .venv)
+# Notebooks des modèles (Partie 4) — JupyterLab (ou ouvrir 03_MODELES/**/*.ipynb dans VS Code, noyau = .venv)
+jupyter lab                                                                  # http://localhost:8888/lab
 
 # Suivi MLflow (Partie 5)
 cd 04_PRODUCTION/mlops && mlflow ui --backend-store-uri sqlite:///mlflow.db   # http://127.0.0.1:5000
+
+# Orchestration Airflow (Partie 3) — nécessite Docker Desktop lancé
+cd 02_DONNEES/orchestration && docker compose up                             # http://localhost:8080  (admin / admin)
 ```
 
 > ⚠️ **Spark** ne fonctionne que sous **WSL/Ubuntu** (Java 11 + PySpark 3.5.3), pas sous Windows.
