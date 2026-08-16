@@ -1,0 +1,7 @@
+# Dependances du dashboard (legeres — lecture DuckDB/CSV + appel API)
+dash
+plotly
+pandas
+duckdb
+requests
+gunicorn

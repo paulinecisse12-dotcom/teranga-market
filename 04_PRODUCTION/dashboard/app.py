@@ -10,6 +10,7 @@ Lancer (depuis 04_PRODUCTION/dashboard) :
 Puis ouvrir dans le navigateur :  http://127.0.0.1:8050
 ============================================================================
 """
+import os
 from pathlib import Path
 import duckdb
 import pandas as pd
@@ -18,7 +19,9 @@ import plotly.graph_objects as go
 from dash import Dash, html, dcc, Input, Output, State
 
 # Adresse de l'API (doit tourner en parallèle : uvicorn main:app --reload)
-API_URL = "http://127.0.0.1:8000"
+API_URL = os.environ.get("API_URL", "http://127.0.0.1:8000")
+if API_URL and not API_URL.startswith("http"):
+    API_URL = "https://" + API_URL
 
 # --- 1) Connexion aux données (warehouse DuckDB) ----------------------------
 ICI = Path(__file__).resolve().parent            # .../04_PRODUCTION/dashboard
@@ -741,6 +744,7 @@ def sidebar():
 
 # --- 4) L'application Dash ---------------------------------------------------
 app = Dash(__name__, title="Dashboard Teranga")
+server = app.server            # exposé pour gunicorn (déploiement en ligne)
 
 app.layout = html.Div(
     style={"background": FOND, "minHeight": "100vh",

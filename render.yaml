@@ -1,0 +1,24 @@
+# Deploiement Teranga Market sur Render (2 services web gratuits)
+#   - teranga-api        : API FastAPI (recommandations, prix)
+#   - teranga-dashboard  : Dashboard Dash (lit DuckDB/CSV + appelle l'API)
+services:
+  - type: web
+    name: teranga-api
+    runtime: python
+    plan: free
+    rootDir: 04_PRODUCTION/api
+    buildCommand: pip install -r requirements.txt
+    startCommand: uvicorn main:app --host 0.0.0.0 --port $PORT
+
+  - type: web
+    name: teranga-dashboard
+    runtime: python
+    plan: free
+    buildCommand: pip install -r 04_PRODUCTION/dashboard/requirements.txt
+    startCommand: gunicorn --chdir 04_PRODUCTION/dashboard app:server --bind 0.0.0.0:$PORT
+    envVars:
+      - key: API_URL
+        fromService:
+          type: web
+          name: teranga-api
+          property: host
